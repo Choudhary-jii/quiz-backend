@@ -41,21 +41,24 @@ npm ci
 createdb vertoquiz
 ```
 4. **Create .env (project root)**
+   
 ```touch .env```
+
 5. **Set this variables in .env**
+   
 ```
 DATABASE_URL="postgresql://<db_user>:<db_passwoed>@localhost:5432/vertoquiz"
 PORT=4000
 ```
 >If your password contains special characters (e.g. @), URL-encode or wrap the string in quotes.
 
-5. **Generate Prisma client**
+6. **Generate Prisma client**
 ```
 npx prisma generate
 ```
 >Note: this project uses a custom Prisma generator output (generated/prisma) — npx prisma generate will produce the client into that folder.
 
-6. **Start dev server**
+7. **Start dev server**
 ```
 npm run dev
 ```
