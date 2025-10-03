@@ -38,7 +38,7 @@ npm ci
 
 3. **Create a Postgres database**
 ```
-createdb vertoquiz
+create db vertoquiz
 ```
 4. **Create .env (project root)**
    
@@ -64,50 +64,13 @@ npx prisma generate
 ```
 npm run dev
 ```
-
----
-## Repo contents (important files & folders)
-
-<details>
-<summary>📂 Root</summary>
-
-
-
-</details>
-
 ---
 
-<details>
-<summary>📂 prisma/</summary>
-</details>
-
----
-
-<details>
-<summary>📂 generated/prisma/</summary>
-</details>
-
----
-
-<details>
-<summary>📂 src/</summary>
-
-</details>
-
----
-
-<details>
-<summary>📂 tests/</summary>
-</details>
-
----
-
-## Tests — how to run
+## Tests — How to Run
 
 >Important -  Integration tests require a real DB. Use a test DB or SQLite for CI/local test runs.
 
-**Run all tests (fast, no DB)**
-> Go to ```../test/ ```
+**Go to ```../test/ ```** then run : 
 ```
 NODE_ENV=test npx jest
 ```
@@ -141,18 +104,20 @@ NODE_ENV=test npx jest
 
     - Text answers max 300 characters
 
-2. ```GET /api/quizze*```— list all quizzes
+2. ```GET /api/quizze```— list all quizzes
 
 3. Tests:
     - ```scoring.unit.test.ts``` covers scoring logic.
     - ```integration.api.test.ts``` covers the full flow (create quiz → add questions → fetch → submit).
 
+---
+
 
 ## Postman API documentation
->Full API doc & examples are available here:
-**https://documenter.getpostman.com/view/39033838/2sB3QGtX1y**
+**Full API doc & examples are available here:** ***https://documenter.getpostman.com/view/39033838/2sB3QGtX1y***
 
 
+---
 ## Assumptions & design choices
 
 - ```isCorrect``` stored in DB but never returned in public responses — anti-cheating measure. DTO mappers strip it before sending responses
