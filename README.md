@@ -29,7 +29,7 @@ git clone https://github.com/Choudhary-jii/quiz-backend.git
 ```
 
 ```
-cd verto-quiz-backend
+cd quiz-backend
 ```
 2. **Install dependencies**
 ```
