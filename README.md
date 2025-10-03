@@ -42,7 +42,9 @@ createdb vertoquiz
 ```
 4. **Create .env (project root)**
    
-```touch .env```
+```
+touch .env
+```
 
 5. **Set this variables in .env**
    
