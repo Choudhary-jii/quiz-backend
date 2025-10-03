@@ -25,7 +25,7 @@ It exposes REST APIs to create quizzes, add questions (single-choice / multiple-
 1. **Clone repository**
 
 ```
-git clone - "https://github.com/Choudhary-jii/quiz-backend.git"
+git clone https://github.com/Choudhary-jii/quiz-backend.git
 ```
 
 ```
