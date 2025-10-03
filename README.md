@@ -1,4 +1,4 @@
-# Quiz Backend (Verto Challenge)
+# Quiz Backend
 
 ## Introduction
 This is a small Quiz backend.  
