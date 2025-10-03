@@ -41,6 +41,8 @@ npm ci
 createdb vertoquiz
 ```
 4. **Create .env (project root)**
+```touch .env```
+5. **Set this variables in .env**
 ```
 DATABASE_URL="postgresql://<db_user>:<db_passwoed>@localhost:5432/vertoquiz"
 PORT=4000
